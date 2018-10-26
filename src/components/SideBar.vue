@@ -1,5 +1,6 @@
 <template>
   <div id="SideBar">
+    <b-img src="../static/logo.svg" alt="img" fluid/>
     <div class="dateContainer">
       <h2>{{ date }}</h2>
     </div>
@@ -43,14 +44,21 @@ export default {
 </script>
 
 <style scoped >
-  #SideBar {}
+  #SideBar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    border-radius: 0px 60px 60px 0px;
+    background-color: #D3D3D3;
+    overflow: hidden;
+  }
   .dateContainer {
-    margin: 30px;
+    margin: 10px 30px 30px 30px;
     text-align: center;
     color: white;
   }
   .navContainer {
-    margin: 200px 30px 30px 30px;
+    margin: 150px 30px 30px 30px;
   }
   .navButton {
     display: inline-block;

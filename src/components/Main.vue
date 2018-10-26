@@ -1,8 +1,6 @@
 <template>
   <div id="Main">
-    <b-container fluid>
       <router-view/>
-    </b-container>
   </div>
 </template>
 
@@ -13,5 +11,9 @@ export default {
 </script>
 
 <style scoped>
-  #Main {}
+  #Main {
+    margin-left: 250px;
+    padding: 0px 15px 0px 15px;
+    height: auto;
+  }
 </style>

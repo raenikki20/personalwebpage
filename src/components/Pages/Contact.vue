@@ -1,12 +1,13 @@
 <template>
   <div id="Contact">
-    <b-row align-h="center">
+    <b-container>
+      <b-row align-h="center">
       <b-col cols="11" class="titleBox">
         <h1>Go Ahead, Ask Me Something</h1>
       </b-col>
     </b-row>
     <b-row class="justify-content-md-center formBoxRow " align-w="center">
-      <b-col cols="10" class="formBox">
+      <b-col cols="10" class="grayBox">
         <b-form @submit="onSubmit">
           <b-row>
             <b-col sm="12" md="12" lg="6">
@@ -47,6 +48,7 @@
         <p>Don't worry, your email is safe with me</p>
       </b-col>
     </b-row>
+    </b-container>
   </div>
 </template>
 
@@ -82,6 +84,7 @@ export default {
 
 <style scoped>
   #Contact{
+    height: 100%;
     text-align: center;
   }
   p {

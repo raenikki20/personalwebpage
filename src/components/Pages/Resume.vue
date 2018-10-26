@@ -1,13 +1,14 @@
 <template>
   <div id="Resume">
-    <b-row align-h="center">
+    <b-container>
+      <b-row align-h="center">
       <b-col cols="11" class="titleBox">
         <h1>DIG A LITTLE DEEPER</h1>
         <b-button :href="resumeLink" download>DOWNLOAD RESUME</b-button>
       </b-col>
     </b-row>
     <b-row align-h="center">
-      <b-col cols="11" class="resumeBox">
+      <b-col cols="11" class="grayBox">
         <b-row class="technologies">
           <b-col cols="4" class="rowHeading">Technologies</b-col>
           <b-col>
@@ -44,6 +45,7 @@
         </b-row>
       </b-col>
     </b-row>
+    </b-container>
   </div>
 </template>
 
@@ -112,11 +114,7 @@ export default {
     border: none;
     background-color: #D3D3D3;
   }
-  .resumeBox {
-    padding: 30px;
-    background-color: #D3D3D3;
-    border-radius: 50px;
-    margin-bottom: 40px;
+  .grayBox {
     text-align: left;
   }
   .rowHeading {
@@ -144,7 +142,6 @@ export default {
     color: white;
     margin-bottom: 5px;
   }
-  .technologies {}
   .workExperience {
     margin-top: 20px;
   }

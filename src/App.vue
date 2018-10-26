@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <div class="sideBar">
+    <div>
       <SideBar></SideBar>
     </div>
-    <div class="main">
+    <div>
       <Main></Main>
     </div>
   </div>
@@ -27,21 +27,7 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #EBEBEB;
-  }
-  .sideBar {
-    position: fixed;
-    width: 250px;
-    height: 100vh;
-    border-radius: 0px 60px 60px 0px;
-    background-color: #D3D3D3;
-    overflow: hidden;
-  }
-  .main {
-    margin-left: 250px;
-    padding: 0px 15px 0px 15px;
-    height: 100%;
-    bottom: 0;
-    overflow: no-display;
+    height: auto;
   }
   .container-fluid {
     padding-right: 0px;
@@ -57,5 +43,11 @@ export default {
   .titleBox h1 {
     font-size: 40px;
     color: white;
+  }
+  .grayBox {
+    padding: 30px;
+    background-color: #D3D3D3;
+    border-radius: 50px;
+    margin-bottom: 40px;
   }
 </style>
