@@ -6,10 +6,17 @@ import About from '@/components/Pages/About'
 import Contact from '@/components/Pages/Contact'
 import Resume from '@/components/Pages/Resume'
 import VuePlayground from '@/components/Projects/VuePlayground'
+import InMoment from '@/components/Projects/InMoment'
+import TalkBlok from '@/components/Projects/TalkBlok'
+import React from '@/components/Projects/React'
+import ColorRun from '@/components/Projects/ColorRun'
 
 Vue.use(Router)
 
 export default new Router({
+  scrollBehavior () {
+    return { x: 0, y: 0 }
+  },
   routes: [
     {
       path: '/',
@@ -40,6 +47,26 @@ export default new Router({
       path: '/vueplayground',
       name: 'VuePlayground',
       component: VuePlayground
+    },
+    {
+      path: '/inmoment',
+      name: 'InMoment',
+      component: InMoment
+    },
+    {
+      path: '/talkblok',
+      name: 'TalkBlok',
+      component: TalkBlok
+    },
+    {
+      path: '/react',
+      name: 'React',
+      component: React
+    },
+    {
+      path: '/colorrun',
+      name: 'ColorRun',
+      component: ColorRun
     }
   ]
 })

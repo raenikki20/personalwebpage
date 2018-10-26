@@ -43,6 +43,12 @@
             </div>
           </b-col>
         </b-row>
+        <b-row class="other">
+          <b-col cols="4" class="rowHeading">Other</b-col>
+          <b-col>
+            <h4>Played Division 1 Collegiate Men's Tennis</h4>
+          </b-col>
+        </b-row>
       </b-col>
     </b-row>
     </b-container>
@@ -147,5 +153,11 @@ export default {
   }
   .education {
     margin-top: 20px;
+  }
+  .other {
+    margin-top: 30px;
+  }
+  .other h4 {
+    padding-top: 10px;
   }
 </style>

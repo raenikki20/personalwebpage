@@ -50,4 +50,10 @@ export default {
     border-radius: 50px;
     margin-bottom: 40px;
   }
+  .blueBox {
+    padding: 30px;
+    background-color: #5D99B6;
+    border-radius: 50px;
+    margin-bottom: 40px;
+  }
 </style>
