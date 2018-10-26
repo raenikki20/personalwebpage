@@ -1,0 +1,90 @@
+<template>
+  <div id="SideBar">
+    <div class="dateContainer">
+      <h2>{{ date }}</h2>
+    </div>
+    <div class="navContainer">
+      <router-link v-for="(link, key) in navigation" :key="key" :to="link.ref" class="navButton" exact>{{ link.name }}</router-link>
+    </div>
+    <div class="social">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-snapchat"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'SideBar',
+  data () {
+    return {
+      navigation: [
+        { name: 'Home', ref: '/' },
+        { name: 'Projects', ref: '/projects' },
+        { name: 'About', ref: '/about' },
+        { name: 'Contact', ref: '/contact' },
+        { name: 'Resume', ref: '/resume' }
+      ]
+    }
+  },
+  computed: {
+    date: function () {
+      var date = new Date()
+      var string = ''
+      string += date.getDate() + '/'
+      string += date.getMonth() + 1 + '/'
+      string += date.getFullYear()
+      return string
+    }
+  }
+}
+</script>
+
+<style scoped >
+  #SideBar {}
+  .dateContainer {
+    margin: 30px;
+    text-align: center;
+    color: white;
+  }
+  .navContainer {
+    margin: 200px 30px 30px 30px;
+  }
+  .navButton {
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    width: 200px;
+    margin: 10px 10px 0px 30px;
+  }
+  .navButton:hover{
+    color: gray;
+    text-decoration: none;
+  }
+  .router-link-active {
+    color: #5D99B6;
+  }
+  .social {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    margin: 30px 5px 30px 5px;
+    text-align: center;
+  }
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    background-color: #5D99B6;
+    color: white;
+    margin: 8px 4px 8px 4px;
+  }
+  .fa:hover {
+    background-color: gray;
+  }
+</style>
