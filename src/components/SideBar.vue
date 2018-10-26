@@ -8,10 +8,11 @@
       <router-link v-for="(link, key) in navigation" :key="key" :to="link.ref" class="navButton" exact>{{ link.name }}</router-link>
     </div>
     <div class="social">
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-snapchat"></a>
-      <a href="#" class="fa fa-instagram"></a>
-      <a href="#" class="fa fa-linkedin"></a>
+      <a href="https://www.facebook.com/nikki.rae2" class="fa fa-facebook"></a>
+      <a href="https://www.snapchat.com/add/nikki.rae18" class="fa fa-snapchat"></a>
+      <a href="https://www.instagram.com/nikki_rae19/?hl=en" class="fa fa-instagram"></a>
+      <a href="https://www.linkedin.com/in/nikki-rae-96a42010a/" class="fa fa-linkedin"></a>
+      <a href="https://github.com/raenikki20" class="fa fa-github"></a>
     </div>
   </div>
 </template>
