@@ -99,9 +99,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   #InMoment {
-    text-align: center;
+    text-align: left;
   }
   h3 {
     color: white;
@@ -109,5 +109,6 @@ export default {
   p {
     margin-bottom: 0px;
     color: white;
+    text-align: left;
   }
 </style>

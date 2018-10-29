@@ -99,8 +99,16 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   #AutoBox {
     text-align: center;
+  }
+  h3, h4, h5 {
+    color: white;
+  }
+  p {
+    margin-bottom: 0px;
+    color: white;
+    text-align: left;
   }
 </style>

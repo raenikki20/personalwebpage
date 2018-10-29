@@ -59,7 +59,7 @@ export default {
     color: white;
   }
   .navContainer {
-    margin: 150px 30px 30px 30px;
+    margin: 30px 30px 30px 30px;
   }
   .navButton {
     display: inline-block;

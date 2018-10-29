@@ -237,11 +237,15 @@
       <b-row align-h="center">
         <b-col cols="10" class="grayBox">
           <h3>Final Solution</h3>
+          <br>
           <h4>The Talk Blok</h4>
+          <br>
           <img src="../../../static/website.png" alt="" style="height:400px; width: 700px" class="img-fluid">
           <img src="../../../static/theblok.png" alt="" style="height:500px; width:320px">
           <img src="../../../static/talkblockoutline.png" alt="" style="height:500px; width:320px">
+          <br><br>
           <h4>The Video</h4>
+          <br>
           <div class="embed-responsive embed-responsive-16by9">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/-4KMwV8B0sc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
@@ -257,8 +261,16 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   #TalkBlok {
     text-align: center;
+  }
+  h3, h4, h5 {
+    color: white;
+  }
+  p {
+    margin-bottom: 0px;
+    color: white;
+    text-align: left;
   }
 </style>
