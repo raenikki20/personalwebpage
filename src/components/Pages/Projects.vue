@@ -27,9 +27,10 @@ export default {
         { id: 1, ref: '/vuePlayground', img: '../static/vuejs.png', title: 'Vue.js Playground', tags: ['Vue.js', 'Bootstrap-Vue', 'HTML', 'CSS'] },
         { id: 2, ref: '#', img: '../static/logo.png', title: 'This Website', tags: ['Vue.js', 'Bootstrap-Vue', 'HTML', 'CSS'] },
         { id: 3, ref: '/inmoment', img: '../static/inmoment.png', title: 'InMoment', tags: ['Vue.js', 'Laravel', 'Bootstrap', 'Raspberry Pi', 'HCI Focused'] },
-        { id: 4, ref: '/talkblok', img: 'https://via.placeholder.com/2000x2000', title: 'TalkBlok', tags: ['HCI Focused'] },
-        { id: 5, ref: '/react', img: 'https://via.placeholder.com/2000x2000', title: 'React - Dont be slow!', tags: ['Swift'] },
-        { id: 6, ref: '/colorrun', img: 'https://via.placeholder.com/2000x2000', title: 'ColorRun - Tap or Swipe', tags: ['Swift'] }
+        { id: 4, ref: '/talkblok', img: '../static/talkblok.png', title: 'TalkBlok', tags: ['HCI Focused'] },
+        { id: 5, ref: '/react', img: '../static/react1.png', title: 'React - Dont be slow!', tags: ['Swift'] },
+        { id: 6, ref: '/colorrun', img: '../static/colorrun.png', title: 'ColorRun - Tap or Swipe', tags: ['Swift'] },
+        { id: 7, ref: '/autobox', img: '../static/autobox.png', title: 'AutoBox', tags: ['HTML', 'CSS', 'PHP'] }
       ]
     }
   }

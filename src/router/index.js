@@ -10,6 +10,7 @@ import InMoment from '@/components/Projects/InMoment'
 import TalkBlok from '@/components/Projects/TalkBlok'
 import React from '@/components/Projects/React'
 import ColorRun from '@/components/Projects/ColorRun'
+import AutoBox from '@/components/Projects/AutoBox'
 
 Vue.use(Router)
 
@@ -67,6 +68,11 @@ export default new Router({
       path: '/colorrun',
       name: 'ColorRun',
       component: ColorRun
+    },
+    {
+      path: '/autobox',
+      name: 'AutoBox',
+      component: AutoBox
     }
   ]
 })
