@@ -7,7 +7,9 @@
         </b-col>
       </b-row>
       <b-row align-h="center" class="lesson">
-          Lesson 5
+          <b-col>
+            <h3>Passing Data from Parent to Child using Props</h3>
+          </b-col>
       </b-row>
     </b-container>
   </div>
@@ -35,6 +37,13 @@ export default {
       font-size: 20px;
       color: white;
       margin: 0px;
+  }
+  h3 {
+      font-size: 16px;
+      margin: 0px;
+  }
+  p {
+    font-size: 12px;
   }
   .projectTitleBox {
     border-radius: 50px;

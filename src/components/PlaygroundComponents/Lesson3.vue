@@ -7,7 +7,25 @@
         </b-col>
       </b-row>
       <b-row align-h="center" class="lesson">
-          Lesson 3
+          <b-col cols="12">
+            <h3>Using Conditionals</h3>
+            <p>I will be using the 'v-if' and 'v-else', the also the 'v-show'</p>
+          </b-col>
+          <b-col cols="6">
+            <h3>v-if and v-else</h3>
+            <p v-if="show">Click the button to hide me</p>
+            <p v-else>Im the v-else</p>
+            <b-button @click="show = !show" style="margin-bottom: 20px;">Hide</b-button>
+          </b-col>
+          <b-col cols="6">
+            <h3>v-show</h3>
+            <p v-show="show1">You can just make me dissapear</p>
+            <b-button @click="show1 = !show1" style="margin-bottom: 20px;">Hide</b-button>
+          </b-col>
+          <b-col cols="12">
+            <h3>Note</h3>
+            <p>'v-show' adds a 'display: none' attribute to the element where as 'v-if' is removed from the DOM</p>
+          </b-col>
       </b-row>
     </b-container>
   </div>
@@ -18,7 +36,8 @@ export default {
   name: 'Lesson3',
   data () {
     return {
-
+      show: true,
+      show1: true
     }
   },
   components: {},
@@ -35,6 +54,13 @@ export default {
       font-size: 20px;
       color: white;
       margin: 0px;
+  }
+  h3 {
+      font-size: 16px;
+      margin: 0px;
+  }
+  p {
+    font-size: 12px;
   }
   .projectTitleBox {
     border-radius: 50px;

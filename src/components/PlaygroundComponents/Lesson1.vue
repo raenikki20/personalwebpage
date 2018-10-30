@@ -7,21 +7,33 @@
         </b-col>
       </b-row>
       <b-row align-h="center" class="lesson">
-          Lesson 1
+          <b-col>
+            <h3>Understanding components</h3>
+            <p>
+              These components are created in seperate files and injected into this Lesson Box
+              I imported the file using the import method, then using the 'components' property
+              I was able to call the components inside this box
+            </p>
+            <component1></Component1>
+            <component2></Component2>
+          </b-col>
       </b-row>
     </b-container>
   </div>
 </template>
 
 <script>
+import Component1 from '@/components/PlaygroundComponents/Components/Component1'
+import Component2 from '@/components/PlaygroundComponents/Components/Component2'
 export default {
   name: 'Lesson1',
   data () {
-    return {
-
-    }
+    return {}
   },
-  components: {},
+  components: {
+    Component1,
+    Component2
+  },
   methods: {},
   computed: {}
 }
@@ -35,6 +47,13 @@ export default {
       font-size: 20px;
       color: white;
       margin: 0px;
+  }
+  h3 {
+      font-size: 16px;
+      margin: 0px;
+  }
+  p {
+    font-size: 12px;
   }
   .projectTitleBox {
     border-radius: 50px;
